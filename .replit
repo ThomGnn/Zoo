@@ -1,4 +1,5 @@
 hidden=[".config"]
+modules = ["web:v2-20230623-0b7a606"]
 
 # hosting is currently hardcoded for this language
 # [hosting]
