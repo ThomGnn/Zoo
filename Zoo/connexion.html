@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleConnexion.css" rel="stylesheet" type="text/css" />
+    <title>Connexion</title>
+</head>
+<body>
+
+    <h2>Connexion</h2>
+
+    <form action="connexion.php" method="POST">
+        <label for="email">Adresse e-mail :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Mot de passe :</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="role">Type de compte :</label><br>
+        <select id="role" name="role" required>
+            <option value="administrateur">Administrateur</option>
+            <option value="employe">Employé</option>
+            <option value="veterinaire">Vétérinaire</option>
+        
+        </select><br><br>
+
+        <input type="submit" value="Se connecter">
+    </form>
+
+</body>
+</html>

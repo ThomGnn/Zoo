@@ -4,7 +4,8 @@ html {
 }
 body {
   background-color: #8b8f8a;
-  font-family: sans-serif,
+  font-family: verdana, sans-serif;
+  font-size: small;
 }
 h1 {
   text-align: center;
@@ -13,12 +14,22 @@ h1 {
 h2 {
   color: #2d412a;
 }
+
+a {
+  color: #2b402c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a5b1ab;
+}
+
 img {
-  width: 100px;
-  height: 100px;
+  width: 70%;
+  height: 70%;
   border-radius: 20px;
   margin-left: auto;
-  padding: 10px;
+  padding: 10px
 }
 nav {
   border: 1px solid #2b402c; /* Couleur et style de la bordure */
@@ -35,61 +46,51 @@ ul {
 }
 
 li {
-  display: inline; /* Affiche les éléments de liste en ligne */
-  margin-right: 10px; /* Espacement entre les éléments de liste */
+  color: #2b402c;
+  display: inline;
+  margin-right: 10px;
 }
 
 a {
   text-decoration: none; /* Supprime la décoration du lien */
-}
-#container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px; /* Espace à l'intérieur de la bordure */
-  border-radius: 10px; /* Coins arrondis */
-}
-.nav1 {
-  border: 1px solid #a2b3a3; /* Couleur et style de la bordure */
-  padding: 10px; /* Espace à l'intérieur de la bordure */
-  border-radius: 10px; /* Coins arrondis */
 }
 
 .caroussel {
     position: relative;
     max-width: 100%;
     margin: auto;
+    padding: auto;
 }
 
 .slide {
     justify-content: center;
-    height: auto; /* Garantit que les proportions de l'image sont préservées */
-    width: 80%; 
+    max-width: 100%; 
+    margin: auto; 
 }
 
-.prev, .next {
+.prevBtn, .nextBtn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 18px;
+    font-size: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #a5b1ab;
     border: none;
     cursor: pointer;
     padding: 10px;
 }
 
-.prev {
-    left: 0;
+.prevBtn {
+    left: 1;
 }
 
-.next {
+.nextBtn {
     right: 0;
 }
 
 .review {
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #a5b1ab;
@@ -102,23 +103,120 @@ a {
 
 .review p {
   color: #333;
+}
 
 .container1 {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 10px;
   background-color: #8da59f;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+}
   .star {
-      color: #FFD700; /* Couleur des étoiles (jaune) */
-      font-size: 20px; /* Taille des étoiles */
+      color: #FFD700;
+      font-size: 15px;
   }
 
-  .rating {
-      margin-bottom: 10px; /* Marge inférieure pour espacer les étoiles des avis */
+  .rating1, rating2 {
+      margin-bottom: 5px;
   }
+  .rating1 {
+      color: #FFD700;
+  }
+  .rating2 {
+      color: #FFD700;
+  }
+  /* Styles pour pied de page */
+  .nav1 {
+    border: 1px solid #a2b3a3;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  #container2 {
+    display: flex;
+    padding: 3px;
+    border-radius: 20px;
+    display: flex; 
+    flex-direction: row;
+  }
+
+  .col1, .col2, .col3 {
+    flex: 1;
+    padding: 6px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+
+.letAdvice {
+  margin: 0;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #a5b1ab;
+  width: fit-content;
+  height: fit-content;
+}
+
+.extra-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.toggle-btn {
+  background-color: #a5b1ab;
+  color: #000000;
+  border: none;
+  padding: 6px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.extra-content1 {
+  display: none;
+  margin-top: 10px;
+}
+
+.toggle-btn1 {
+  background-color: #a5b1ab;
+  color: #000000;
+  border: none;
+  padding: 6px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Styles pour les liens du pied de page */
+ol {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
+ol li a {
+  text-decoration: none;
+  color: #333;
+  text-transform: capitalize;
+}
+
+ol li a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
 
   
 

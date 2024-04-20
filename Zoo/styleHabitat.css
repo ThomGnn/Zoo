@@ -1,0 +1,44 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #8b8f8a;
+  font-family: verdana, sans-serif;
+  font-size: small;
+}
+.habitat {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.habitat:hover {
+    background-color: #f0f0f0;
+}
+.animal-details {
+    margin-top: 10px;
+    display: none;
+}
+.animal-details.active {
+    display: block;
+}
+.habitat img {
+    max-width: 70%;
+    height: auto;
+    width: auto; 
+}
+.singe:hover, .felin:hover, .grenouille:hover, .oiseau:hover, .girafe:hover, .elephant:hover {
+    color: #f0f0f0;
+    cursor: pointer;
+}
+.titreVeto:hover {
+    color: #f0f0f0;
+    cursor: pointer;
+}
+.infoVeto {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    display: none; 
+}

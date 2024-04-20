@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleEmploye.css" rel="stylesheet" type="text/css" />
+    <title>Espace Employé</title>
+</head>
+<body>
+
+    <h2>Espace Employé</h2>
+    <h3>Avis soumis à validation</h3>
+
+    <!-- Zone pour afficher les avis soumis par les visiteurs -->
+    <div id="avisVisiteurs">
+        <!-- Les avis seront ajoutés ici par PHP côté serveur -->
+        <!-- Example d'avis -->
+        <div class="avis">
+            <!-- Utilisation de backticks pour insérer dynamiquement le pseudo -->
+            <p><strong>Pseudo :</strong> <span id="pseudo"></span></p>
+            <p><strong>Note :</strong> <span id="rating"></span></p>
+            <p><strong>Avis :</strong> <span id="comment"></span></p>
+            <!-- Ajout des boutons Valider et Refuser -->
+            <button onclick="validerAvis(this)">Valider</button>
+            <button onclick="refuserAvis(this)">Refuser</button>
+        </div>
+    </div>
+
+  <h3>Modifier les services du Zoo Arcadia</h3>
+
+  <form action="modifierServices.php" method="POST">
+      <div class="services">
+          <div class="service">
+              <h2>Restauration</h2>
+              <label for="restauration">Description :</label>
+              <textarea id="restauration" name="restauration" rows="4" cols="50"></textarea>
+          </div>
+
+          <div class="service">
+              <h2>Visite des Habitats</h2>
+              <label for="habitat">Description :</label>
+              <textarea id="habitat" name="habitat" rows="4" cols="50"></textarea>
+          </div>
+
+          <div class="service">
+              <h2>Visite en Petit Train</h2>
+              <label for="train">Description :</label>
+              <textarea id="train" name="train" rows="4" cols="50"></textarea>
+          </div>
+      </div>
+
+      <input type="submit" value="Modifier les services">
+  </form>
+
+    <script>
+        // Récupérer les données du localStorage
+        var pseudo = localStorage.getItem('pseudo');
+        var rating = localStorage.getItem('rating');
+        var comment = localStorage.getItem('comment');
+
+        // Afficher les données dans les éléments correspondants sur la page employe.html
+        document.getElementById('pseudo').textContent = pseudo || "Pseudo non disponible";
+        document.getElementById('rating').textContent = rating || "Note non disponible";
+        document.getElementById('comment').textContent = comment || "Commentaire non disponible";
+
+      function validerAvis(button) {
+          var pseudo = document.getElementById('pseudo').textContent;
+          var rating = document.getElementById('rating').textContent;
+          var comment = document.getElementById('comment').textContent;
+
+          // Stocker les données dans des cookies
+          document.cookie = "pseudo=" + encodeURIComponent(pseudo);
+          document.cookie = "rating=" + encodeURIComponent(rating);
+          document.cookie = "comment=" + encodeURIComponent(comment);
+
+          // Afficher un message de confirmation
+          alert("L'avis a été validé.");
+
+          // Rediriger l'utilisateur vers la page index.html
+          window.location.href = 'index.html';
+      }
+      
+        function refuserAvis(button) {
+            // Supprimer le bloc d'avis de la page une fois qu'il est refusé
+            button.parentElement.remove();
+            // Afficher un message de refus
+            alert("L'avis a été refusé.");
+        }
+    </script>
+
+</body>
+</html>

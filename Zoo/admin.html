@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleAdmin.css" rel="stylesheet" type="text/css" />
+    <title>Création de comptes</title>
+</head>
+<body>
+  <a href="index.html">Retour à l'accueil</a>
+<h2>Création de comptes</h2>
+
+<form action="create_accounts.php" method="POST">
+    <h3>Créer un compte employé :</h3>
+    <label for="employee_email">Email de l'employé :</label><br>
+    <input type="email" id="employee_email" name="employee_email" required><br><br>
+    <input type="submit" name="create_employee_account" value="Créer le compte employé">
+    <!-- Ce bouton enverra les données pour créer un compte employé -->
+
+</form>
+
+<form action="create_accounts.php" method="POST">
+    <h3>Créer un compte vétérinaire :</h3>
+    <label for="vet_email">Email du vétérinaire :</label><br>
+    <input type="email" id="vet_email" name="vet_email" required><br><br>
+    <input type="submit" name="create_vet_account" value="Créer le compte vétérinaire">
+    <!-- Ce bouton enverra les données pour créer un compte vétérinaire -->
+</form>
+
+  <h2>Autres actions</h2>
+
+  <div class="actions">
+      <form action="#" method="POST">
+          <label for="action_create">Créer :</label>
+          <select id="action_create" name="action_create">
+              <option value="service">Service</option>
+              <option value="schedule">Horaire</option>
+              <option value="habitat">Habitat</option>
+              <option value="animal">Animal du zoo</option>
+          </select>
+          <input type="submit" value="Go">
+      </form>
+
+      <form action="#" method="POST">
+          <label for="action_update">Modifier :</label>
+          <select id="action_update" name="action_update">
+              <option value="service">Service</option>
+              <option value="schedule">Horaire</option>
+              <option value="habitat">Habitat</option>
+              <option value="animal">Animal du zoo</option>
+          </select>
+          <input type="submit" value="Go">
+      </form>
+
+      <form action="#" method="POST">
+          <label for="action_delete">Supprimer :</label>
+          <select id="action_delete" name="action_delete">
+              <option value="service">Service</option>
+              <option value="schedule">Horaire</option>
+              <option value="habitat">Habitat</option>
+              <option value="animal">Animal du zoo</option>
+          </select>
+          <input type="submit" value="Go">
+      </form>
+  </div>
+
+
+  <div class="reports">
+      <h3>Comptes Rendus Vétérinaire :</h3>
+      <!-- Ajoutez ici la liste des comptes rendus avec des filtres pour trier et filtrer -->
+  </div>
+
+</body>
+</html>
