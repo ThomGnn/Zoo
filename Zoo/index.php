@@ -1,6 +1,6 @@
 <?php
 $pdo = new PDO(dsn: 'mysql:host=localhost;port8889;dbname=users_management','root','');
-  $statement = $pdo->prepare(statement : 'INSERT INTO users VALUES (:email, :<?php
+  $statement = $pdo->prepare(statement : 'INSERT INTO users VALUES (:email, :password, :role)')
 // Connexion à la base de données avec PDO
 $db_host = 'localhost';
 $db_name = 'connexion';

@@ -154,7 +154,7 @@
     <?php
     // Connexion à la base de données (à remplacer avec vos informations de connexion)
     $servername = "localhost";
-    $username = "root";t
+    $username = "root";
     $password = "root";
     $dbname = "veterinaire_db";
 
