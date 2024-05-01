@@ -152,6 +152,42 @@
     <div class=infoVeto>
     <p>Test d'affichage du code au clic</p>
     <?php
+
+      // Se connecter à la base de données MongoDB
+      $mongoClient = new MongoDB\Client("mongodb://localhost:27017");
+      $visitorsDB = $mongoClient->visitors;
+      $animalCollection = $visitorsDB->animal;
+
+      // Fonction pour incrémenter les consultations d'un animal
+      function incrementConsultations($animalName) {
+          global $animalCollection;
+
+          // Rechercher l'animal dans la collection
+          $animal = $animalCollection->findOne(['nom' => $animalName]);
+
+          // Vérifier si l'animal a été trouvé
+          if ($animal) {
+              // Incrémenter le nombre de consultations
+              $newConsultations = $animal['consultations'] + 1;
+
+              // Mettre à jour le document dans la collection
+              $animalCollection->updateOne(
+                  ['nom' => $animalName],
+                  ['$set' => ['consultations' => $newConsultations]]
+              );
+
+              echo "Consultations pour $animalName incrémentées avec succès.";
+          } else {
+              echo "Animal non trouvé dans la base de données.";
+          }
+      }
+
+      // Appeler la fonction avec le nom de l'animal cliqué
+      if (isset($_GET['animal'])) {
+          $animalName = $_GET['animal'];
+          incrementConsultations($animalName);
+      }
+      
     // Connexion à la base de données (à remplacer avec vos informations de connexion)
     $servername = "localhost";
     $username = "root";

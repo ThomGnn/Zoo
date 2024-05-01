@@ -25,20 +25,22 @@ a:hover {
 }
 
 img {
-  width: 70%;
-  height: 70%;
-  border-radius: 20px;
+  width: 22em;
+  height: 15em;
+  border-radius: 15%;
   margin-left: auto;
-  padding: 10px
+  padding-right: 25px;
+  padding-left: 25px;
 }
+
 nav {
-  border: 1px solid #2b402c; /* Couleur et style de la bordure */
-  padding: 10px; /* Espace à l'intérieur de la bordure */
-  border-radius: 10px; /* Coins arrondis */
+  border: 1px solid #2b402c;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 ul {
-  list-style-type: none; /* Supprime les puces de la liste */
+  list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -52,13 +54,25 @@ li {
 }
 
 a {
-  text-decoration: none; /* Supprime la décoration du lien */
+  text-decoration: none;
 }
 
+.containerDecouvrez {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.text {
+  position: relative;
+  text-align: left;
+  max-width: 45%;
+}
 .caroussel {
     position: relative;
-    max-width: 100%;
-    margin: auto;
+    max-width: 50%;
+    margin-right: 0;
+    margin-left: auto;
     padding: auto;
 }
 

@@ -20,14 +20,15 @@
         <li><a href="connexion.html">Connexion</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
-    <p> Le zoo <strong>Arcadia</strong>, niché au cœur de la Bretagne française depuis sa création en 1960, offre une expérience captivante et éducative aux visiteurs de tous âges. <span class="extra-content">Situé à proximité de la mystique forêt de Brocéliande, ce zoo pittoresque offre un refuge à une diversité d'animaux, constituant ainsi un véritable trésor de la faune locale et internationale. Au fil des décennies, le zoo Arcadia s'est engagé à sensibiliser le public à la conservation de la biodiversité, tout en offrant un environnement naturel et sécurisé pour ses habitants à poils, à plumes et à écailles. De la majestueuse girafe aux fascinantes créatures des profondeurs marines, chaque espèce trouve sa place dans ce sanctuaire où la préservation de la vie sauvage est une priorité. À travers des programmes d'éducation et des activités interactives, le zoo Arcadia invite les visiteurs à découvrir les merveilles de la nature, à apprécier la richesse de la faune mondiale et à jouer un rôle actif dans la protection de notre planète pour les générations futures.</span></p>
-    <button class="toggle-btn" onclick="toggleExtraContent()">Voir plus</button>
-    
+    </nav>    
   </header>
 
   <article>
-    <h2>Nos animaux</h2>
+    <h2>Découvrez!</h2>
+    <div class="containerDecouvrez">
+    <div class="text">
+      <p>Le zoo <strong></strong>Arcadia</strong>, établi en 1960 au cœur de la Bretagne française, offre une expérience enrichissante pour tous. Situé près de la forêt de Brocéliande, il abrite une variété d'animaux locaux et internationaux, promouvant ainsi la biodiversité. Le zoo s'engage dans la sensibilisation à la conservation tout en assurant le bien-être des animaux. Des girafes aux créatures marines, chacune trouve sa place dans ce sanctuaire. Des programmes éducatifs invitent les visiteurs à découvrir et à protéger notre précieuse nature.</p>
+    </div>
     <div class="caroussel">
       <button class="prevBtn" onclick="prevSlide()">&#10094;</button>
       <img class="slide" src="giraffe-2222908_1280.jpg" alt="Caroline">
@@ -35,7 +36,6 @@
       <img class="slide" src="singe.jpg" alt="Jeann">
       <button class="nextBtn" onclick="nextSlide()">&#10095;</button>
     </div>
-
     <script>
         let slideIndex = 0;
 
@@ -59,7 +59,8 @@
           slides[slideIndex].style.display = "block";
       }
     </script>
-
+    </div>
+<h2>Les habitats</h2>
     <p> Le zoo Arcadia offre une expérience inoubliable où les visiteurs peuvent explorer trois habitats distincts - la
       savane, la jungle et le marais - et découvrir une variété d'animaux emblématiques. <span class="extra-content1">Des lions majestueux de la
       savane aux singes espiègles de la jungle et aux crocodiles rusés du marais, chaque habitat abrite une biodiversité
