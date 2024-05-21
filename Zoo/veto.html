@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleAdmin.css" rel="stylesheet" type="text/css" />
+    <title>Informations du vétérinaire</title>
+</head>
+
+<body>
+    <h3>Espace réservé au vétérinaire</h3>
+    <form action="connexion.php" method="POST">
+        <label for="animal_type">Espèce de l'animal :</label><br>
+        <input type="text" id="animal_type" name="animal_type" required><br><br>
+        <label for="animal_name">Nom de l'animal :</label><br>
+        <input type="text" id="animal_name" name="animal_name" required><br><br>
+        <label for="animal_state">État de l'animal :</label><br>
+        <input type="text" id="animal_state" name="animal_state" required><br><br>
+        <label for="proposed_food">Nourriture proposée :</label><br>
+        <input type="text" id="proposed_food" name="proposed_food" required><br><br>
+        <label for="food_weight">Grammage de la nourriture :</label><br>
+        <input type="text" id="food_weight" name="food_weight" required><br><br>
+        <label for="visit_date">Date du passage :</label><br>
+        <input type="date" id="visit_date" name="visit_date" required><br><br>
+        <label for="animal_condition_details">Détail de l'état de l'animal :</label><br>
+        <textarea id="animal_condition_details" name="animal_condition_details" rows="6" cols="50"></textarea><br><br>
+        <input type="submit" value="Enregistrer">
+    </form>
+</body>
+
+</html>

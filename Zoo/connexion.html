@@ -1,0 +1,16 @@
+<form action="co.php" method="POST"> <!-- Update the action to point to co.php -->
+    <label for="email">Adresse e-mail :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Mot de passe :</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="role">Type de compte :</label><br>
+    <select id="role" name="role" required>
+        <option value="administrateur">Administrateur</option>
+        <option value="employe">Employé</option>
+        <option value="veterinaire">Vétérinaire</option>
+    </select><br><br>
+
+    <input type="submit" value="Se connecter">
+</form>
