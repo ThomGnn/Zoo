@@ -52,6 +52,33 @@
       <input type="submit" value="Modifier les services">
   </form>
 
+  <h3>Ajouter une consommation de nourriture</h3>
+  <form action="ajouterConsommation.php" method="POST">
+      <label for="animal">Sélectionner l'animal :</label>
+      <select id="animal" name="animal">
+          <option value="singe">Singe</option>
+          <option value="felin">Félin</option>
+          <option value="grenouille">Grenouille</option>
+          <option value="oiseau">Oiseau</option>
+          <option value="girafe">Girafe</option>
+          <option value="éléphant">Elephant</option>
+      </select><br><br>
+
+      <label for="date">Date :</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <label for="heure">Heure :</label>
+      <input type="time" id="heure" name="heure" required><br><br>
+
+      <label for="nourriture">Type de nourriture :</label>
+      <input type="text" id="nourriture" name="nourriture" required><br><br>
+
+      <label for="quantite">Quantité en g:</label>
+      <input type="number" id="quantite" name="quantite" required><br><br>
+
+      <input type="submit" value="Ajouter les informations">
+  </form>
+
     <script>
         // Récupérer les données du localStorage
         var pseudo = localStorage.getItem('pseudo');
