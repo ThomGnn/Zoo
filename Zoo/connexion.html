@@ -1,16 +1,29 @@
-<form action="co.php" method="POST">
-    <label for="email">Adresse e-mail :</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styleCo.css" rel="stylesheet" type="text/css" />
+    <title>Contact</title>
+</head>
+<body>
+    <a href="index.html">Retour à l'accueil</a>
+    <h2>Connectez-vous</h2>
+    <form action="co.php" method="POST">
+        <label for="email">Adresse e-mail :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-    <label for="password">Mot de passe :</label><br>
-    <input type="password" id="password" name="password" required><br><br>
+        <label for="password">Mot de passe :</label><br>
+        <input type="password" id="password" name="password" required><br><br>
 
-    <label for="role">Type de compte :</label><br>
-    <select id="role" name="role" required>
-        <option value="administrateur">Administrateur</option>
-        <option value="employe">Employe</option>
-        <option value="veterinaire">Veterinaire</option>
-    </select><br><br>
+        <label for="role">Type de compte :</label><br>
+        <select id="role" name="role" required>
+            <option value="administrateur">Administrateur</option>
+            <option value="employe">Employe</option>
+            <option value="veterinaire">Veterinaire</option>
+        </select><br><br>
 
-    <input type="submit" value="Se connecter">
-</form>
+        <input type="submit" value="Se connecter">
+    </form>
+</body>
+</html>
