@@ -30,9 +30,9 @@
 - IA(s)
 
 ## Bibliographie et aide
-- Réaliser votre site web avec HTML 5 et CSS 3 (3ème édition)
-- Concevez votre site web avec PHP et MYSQL (4ème édition)
-- OH MY CODE, JE PARLE LE JAVASCRIPT (2ème édition)
+- Réaliser votre site web avec HTML 5 et CSS 3 (3ème édition) Mathieu Nebra
+- Concevez votre site web avec PHP et MYSQL (4ème édition) Mathieu Nebra
+- OH MY CODE, JE PARLE LE JAVASCRIPT (2ème édition) Sonia Baibou
 
 ## Auteurs
 - [ThomGnn](https://github.com/ThomGnn/Zoo)
