@@ -1,7 +1,7 @@
 # Mon Application Zoo Arcadia
 
 ## Comment Exécuter
-1. Se rendre sur l'adresse XXX
+1. Se rendre sur l'adresse https://zoo-ecf-bold-jungle-8b8f8a.fly.dev
 
 ## Identifiants et mots de passes
 1. Rôle: Vétérinaire, email: veterinaire@gmail.com, mot de passe: CarolineLaGirafe
