@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styleEmploye.css" rel="stylesheet" type="text/css" />
     <title>Espace Employé</title>
 </head>
-<body>
 
+<body>
+    <a href="index.html">Retour à l'accueil</a>
     <h2>Espace Employé</h2>
     <h3>Avis soumis à validation</h3>
 
@@ -26,58 +28,58 @@
         </div>
     </div>
 
-  <h3>Modifier les services du Zoo Arcadia</h3>
+    <h3>Modifier les services du Zoo Arcadia</h3>
 
-  <form action="modifierServices.php" method="POST">
-      <div class="services">
-          <div class="service">
-              <h2>Restauration</h2>
-              <label for="restauration">Description :</label>
-              <textarea id="restauration" name="restauration" rows="4" cols="50"></textarea>
-          </div>
+    <form action="modifierServices.php" method="POST">
+        <div class="services">
+            <div class="service">
+                <h2>Restauration</h2>
+                <label for="restauration">Description :</label>
+                <textarea id="restauration" name="restauration" rows="4" cols="50"></textarea>
+            </div>
 
-          <div class="service">
-              <h2>Visite des Habitats</h2>
-              <label for="habitat">Description :</label>
-              <textarea id="habitat" name="habitat" rows="4" cols="50"></textarea>
-          </div>
+            <div class="service">
+                <h2>Visite des Habitats</h2>
+                <label for="habitat">Description :</label>
+                <textarea id="habitat" name="habitat" rows="4" cols="50"></textarea>
+            </div>
 
-          <div class="service">
-              <h2>Visite en Petit Train</h2>
-              <label for="train">Description :</label>
-              <textarea id="train" name="train" rows="4" cols="50"></textarea>
-          </div>
-      </div>
+            <div class="service">
+                <h2>Visite en Petit Train</h2>
+                <label for="train">Description :</label>
+                <textarea id="train" name="train" rows="4" cols="50"></textarea>
+            </div>
+        </div>
 
-      <input type="submit" value="Modifier les services">
-  </form>
+        <input type="submit" value="Modifier les services">
+    </form>
 
-  <h3>Ajouter une consommation de nourriture</h3>
-  <form action="ajouterConsommation.php" method="POST">
-      <label for="animal">Sélectionner l'animal :</label>
-      <select id="animal" name="animal">
-          <option value="singe">Singe</option>
-          <option value="felin">Félin</option>
-          <option value="grenouille">Grenouille</option>
-          <option value="oiseau">Oiseau</option>
-          <option value="girafe">Girafe</option>
-          <option value="éléphant">Elephant</option>
-      </select><br><br>
+    <h3>Ajouter une consommation de nourriture</h3>
+    <form action="ajouterConsommation.php" method="POST">
+        <label for="animal">Sélectionner l'animal :</label>
+        <select id="animal" name="animal">
+            <option value="singe">Singe</option>
+            <option value="felin">Félin</option>
+            <option value="grenouille">Grenouille</option>
+            <option value="oiseau">Oiseau</option>
+            <option value="girafe">Girafe</option>
+            <option value="éléphant">Elephant</option>
+        </select><br><br>
 
-      <label for="date">Date :</label>
-      <input type="date" id="date" name="date" required><br><br>
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date" required><br><br>
 
-      <label for="heure">Heure :</label>
-      <input type="time" id="heure" name="heure" required><br><br>
+        <label for="heure">Heure :</label>
+        <input type="time" id="heure" name="heure" required><br><br>
 
-      <label for="nourriture">Type de nourriture :</label>
-      <input type="text" id="nourriture" name="nourriture" required><br><br>
+        <label for="nourriture">Type de nourriture :</label>
+        <input type="text" id="nourriture" name="nourriture" required><br><br>
 
-      <label for="quantite">Quantité en g:</label>
-      <input type="number" id="quantite" name="quantite" required><br><br>
+        <label for="quantite">Quantité en g:</label>
+        <input type="number" id="quantite" name="quantite" required><br><br>
 
-      <input type="submit" value="Ajouter les informations">
-  </form>
+        <input type="submit" value="Ajouter les informations">
+    </form>
 
     <script>
         // Récupérer les données du localStorage
@@ -90,23 +92,23 @@
         document.getElementById('rating').textContent = rating || "Note non disponible";
         document.getElementById('comment').textContent = comment || "Commentaire non disponible";
 
-      function validerAvis(button) {
-          var pseudo = document.getElementById('pseudo').textContent;
-          var rating = document.getElementById('rating').textContent;
-          var comment = document.getElementById('comment').textContent;
+        function validerAvis(button) {
+            var pseudo = document.getElementById('pseudo').textContent;
+            var rating = document.getElementById('rating').textContent;
+            var comment = document.getElementById('comment').textContent;
 
-          // Stocker les données dans des cookies
-          document.cookie = "pseudo=" + encodeURIComponent(pseudo);
-          document.cookie = "rating=" + encodeURIComponent(rating);
-          document.cookie = "comment=" + encodeURIComponent(comment);
+            // Stocker les données dans des cookies
+            document.cookie = "pseudo=" + encodeURIComponent(pseudo);
+            document.cookie = "rating=" + encodeURIComponent(rating);
+            document.cookie = "comment=" + encodeURIComponent(comment);
 
-          // Afficher un message de confirmation
-          alert("L'avis a été validé.");
+            // Afficher un message de confirmation
+            alert("L'avis a été validé.");
 
-          // Rediriger l'utilisateur vers la page index.html
-          window.location.href = 'index.html';
-      }
-      
+            // Rediriger l'utilisateur vers la page index.html
+            window.location.href = 'index.html';
+        }
+
         function refuserAvis(button) {
             // Supprimer le bloc d'avis de la page une fois qu'il est refusé
             button.parentElement.remove();
@@ -116,4 +118,5 @@
     </script>
 
 </body>
+
 </html>

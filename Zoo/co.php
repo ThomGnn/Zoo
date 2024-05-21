@@ -30,7 +30,7 @@ if(isset($_POST['email']) && isset($_POST['password']) && isset($_POST['role']))
     } else {
         // Si les informations de connexion sont incorrectes, afficher un message d'erreur
         error_log('Login incorrect'); // Log login error for debugging
-        header('Location: /Zoo/connexion.html'); // Update the path for online environment
+        header('Location: connexion.html'); // Update the path for online environment
         exit();
     }
 } else {

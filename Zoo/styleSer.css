@@ -43,3 +43,11 @@ h1 {
     border-radius: 8px;
     background-color: #fff;
 }
+a {
+  color: #2b402c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a5b1ab;
+}

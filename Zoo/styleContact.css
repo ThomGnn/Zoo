@@ -11,3 +11,11 @@ body {
 textarea {
     width: 90vw;
 }
+a {
+  color: #2b402c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a5b1ab;
+}

@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <a href="index.html">Retour à l'accueil</a>
     <h2>Voici les différents habitats</h2>
     <h4>Clique sur ton habitat favori pour en savoir plus</h4>
 

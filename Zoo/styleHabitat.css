@@ -42,3 +42,11 @@ body {
     margin-bottom: 50px;
     display: none; 
 }
+a {
+  color: #2b402c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a5b1ab;
+}
