@@ -22,12 +22,12 @@
 - PHP
 
 ## Application Utilisées
-replit.com
-Figma
-fly.io
-phpMyAdmin
-MongoDB
-IA(s)
+- replit.com
+- Figma
+- fly.io
+- phpMyAdmin
+- MongoDB
+- IA(s)
 
 ## Bibliographie et aide
 - Réaliser votre site web avec HTML 5 et CSS 3 (3ème édition)
@@ -40,3 +40,4 @@ IA(s)
 ## Remerciements
 - les développeurs ayant répondu à mes questions sur le forum
 - Images provenant de [Freep!k]
+- mon entourage pour le soutien moral
