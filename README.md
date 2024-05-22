@@ -3,7 +3,7 @@
 ## Comment Exécuter
 1. Se rendre sur l'adresse https://zoo-ecf-bold-jungle-8b8f8a.fly.dev
 
-## Identifiants et mots de passes
+## Identifiants et mots de passe
 1. Rôle: Vétérinaire, email: veterinaire@gmail.com, mot de passe: CarolineLaGirafe
 2. Rôle: Employé, email: employe@gmail.com, mot de passe: EdouardLeSinge
 3. Rôle: Administrateur, email: administrateur@gmail.com, mot de passe: BernadetteLaHyène
