@@ -1,0 +1,265 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #8b8f8a;
+  font-family: verdana, sans-serif;
+  font-size: small;
+}
+
+h1 {
+  text-align: center;
+  color: #f0f0f0;
+}
+
+h2 {
+  color: #2d412a;
+}
+
+a {
+  color: #2b402c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a5b1ab;
+}
+
+img {
+  width: 22em;
+  height: 15em;
+  border-radius: 15%;
+  margin-left: auto;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+nav {
+  border: 1px solid #2b402c;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+li {
+  color: #2b402c;
+  display: inline;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.containerDecouvrez {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.text {
+  position: relative;
+  text-align: left;
+  max-width: 45%;
+}
+
+.caroussel {
+  position: relative;
+  max-width: 50%;
+  margin-right: 0;
+  margin-left: auto;
+  padding: auto;
+}
+
+.slide {
+  justify-content: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.prevBtn,
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #a5b1ab;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prevBtn {
+  left: 1;
+}
+
+.nextBtn {
+  right: 0;
+}
+
+.review {
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #a5b1ab;
+}
+
+.review h3 {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.review p {
+  color: #333;
+}
+
+.container1 {
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #8da59f;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.star {
+  color: #FFD700;
+  font-size: 15px;
+}
+
+.rating1,
+rating2 {
+  margin-bottom: 5px;
+}
+
+.rating1 {
+  color: #FFD700;
+}
+
+.rating2 {
+  color: #FFD700;
+}
+
+/* Styles pour pied de page */
+.nav1 {
+  border: 1px solid #a2b3a3;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#container2 {
+  display: flex;
+  padding: 3px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.col1,
+.col2,
+.col3 {
+  flex: 1;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.letAdvice {
+  margin: 0;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #a5b1ab;
+  width: fit-content;
+  height: fit-content;
+}
+
+.extra-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.toggle-btn {
+  background-color: #a5b1ab;
+  color: #000000;
+  border: none;
+  padding: 6px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.extra-content1 {
+  display: none;
+  margin-top: 10px;
+}
+
+.toggle-btn1 {
+  background-color: #a5b1ab;
+  color: #000000;
+  border: none;
+  padding: 6px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Styles pour les liens du pied de page */
+ol {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
+ol li a {
+  text-decoration: none;
+  color: #333;
+  text-transform: capitalize;
+}
+
+ol li a:hover {
+  text-decoration: underline;
+}
+
+.avis-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.avis-card h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.avis-card .rating {
+  color: gold;
+  margin-top: 5px;
+}
+
+.avis-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}

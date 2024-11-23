@@ -1,0 +1,21 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #8b8f8a;
+  font-family: verdana, sans-serif;
+  font-size: small;
+}
+
+textarea {
+    width: 90vw;
+}
+a {
+  color: #2b402c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a5b1ab;
+}
